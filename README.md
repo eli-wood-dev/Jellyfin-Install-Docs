@@ -30,7 +30,8 @@ Wait for the download to finish then continue
 
 If ufw is being used then port 8096 should be opened
 
-`sudo ufw enable 8096`
+`sudo ufw allow 8096`
+`sudo ufw enable`
 
 ### Test that the site is available
 
