@@ -53,7 +53,7 @@ Once you access the site it will bring you through a configuration process
 - Choose your Language and Country
 - Ensure `Allow remote connections to this server` is checked
 - Select `Finish`
-- Log into the account you created earlie
+- Log into the account you created earlier
 
 You are now in the Jellyfin dashboard
 
