@@ -31,7 +31,10 @@ Wait for the download to finish then continue
 If ufw is being used then port 8096 should be opened
 
 `sudo ufw allow 8096`
+
 `sudo ufw enable`
+
+Before enabling ufw ensure other critical ports are opened. (22 for SSH, 80 for HTTP, and 443 for HTTPS)
 
 ### Test that the site is available
 
