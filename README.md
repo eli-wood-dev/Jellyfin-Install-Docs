@@ -120,8 +120,8 @@ There are two ways of accessing the media, using the website or using the app
 
 ### Jellyfin on a browser
 
-Navigate to the hostname or ip of the pi followed by the port number, e.g. `192.168.1.100:8096`
-Log into the user you used previously
+- Navigate to the hostname or ip of the pi followed by the port number, e.g. `192.168.1.100:8096`
+- Log into the user you used previously
 
 ### Creating a new user
 
