@@ -48,10 +48,13 @@ Once you access the site it will bring you through a configuration process
 
 - Create a user that you will use to access Jellyfin
 - Select `Add Media Library`
-- Choose the content type of the media library, i.e. Movies, Music, Books
+- Choose the content type of the media library, e.g. Movies, Music, Books
 - Choose the name for your media library
-- Press the `+` Button next to the `Folders` tag
+- Press the `+`bButton next to the `Folders` tag
 - Select the filepath to your media (this should be on an external media like a usb hard drive)
+ 
+> you can also use network shares as the path for your media
+
 - Select `OK`
 - Select `Next`
 - Choose your Language and Country
@@ -80,3 +83,52 @@ Next you need to enable hardware acceleration
 - Select `Playback` then `Hardware acceleration`
 - Select `Video4Linux2 (V4L2)` (This is the only one that works on the Raspberry Pi)
 - Scroll to the bottom and select `Save`
+
+## Next Steps
+
+### Adding new media libraries
+
+- click on the hamburger in the upper right
+- select `Dashboard`
+- under `Server`, select `Libraries` and click `Add media library`
+- Choose the content type of the media library, e.g. Movies, Music, Books
+- Choose the name for your media library
+- Press the `+` button next to the `Folders` tag
+- Select the filepath to your media (this should be on an external media like a usb hard drive)
+  
+> you can also use network shares as the path for your media
+
+- Select `OK`
+
+### Adding content to media libraries
+
+In order to add content to an existing library you only need to add the media files to the specified folder from earlier
+
+### Accessing the server remotely
+
+If you wish to access the servere remotely you will need some way to enter your network externally, either through port forwarding or a vpn
+
+You can also put Jellyfin behind a [reverse proxy](https://jellyfin.org/docs/general/networking/#running-jellyfin-behind-a-reverse-proxy)
+
+There are two ways of accessing the media, using the website or using the app
+
+### Jellyfin app
+
+- Download the Jellyfin app from the [Jellyfin Github page](https://github.com/jellyfin/jellyfin-media-player/releases)
+- Enter the host name or ip of the pi followed by the port, e.g. `192.168.1.100:8096`
+- Sign into the user account you used in the setup
+
+### Jellyfin on a browser
+
+Navigate to the hostname or ip of the pi followed by the port number, e.g. `192.168.1.100:8096`
+Log into the user you used previously
+
+### Creating a new user
+
+- click on the hamburger in the upper right
+- select `Dashboard`
+- under `Server`, select `Users`
+- Press the `+` button
+- Enter the `name` and `password` of the new user
+- Under` Libraries` Choose what media libraries the user can access, or select `Enable access to all libraries`
+- Click `Save`
